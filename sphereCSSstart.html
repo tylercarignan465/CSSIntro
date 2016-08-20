@@ -21,13 +21,21 @@
             border: 3px solid #19c2ff;
             padding: 0 0.5em 0.5em;
         }
-
         label {
             float:none;
             width:12em;
             display:block;
             clear:both;
         }
+        label.SL  {
+            color:#fffdf8;
+        }
+
+        #CRlabel {
+            color:#fffdf8;
+
+        }
+
 
 	</style>
 
@@ -44,7 +52,9 @@
             <h3>Spheres:</h3>
             <table>
                 <tr>
-                    <td><label for="sphereRadius">Radius:</label></td>
+                    <td><label for="sphereRadius"
+                               class="SL"
+                    >Radius:</label></td>
                     <td><input type="text"
                                id="sphereRadius"
                                name="sphereRadius"
@@ -52,7 +62,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="sphereVolume">Volume:</label></td>
+                    <td><label for="sphereVolume"
+                              class="SL"
+                    >Volume:</label></td>
                     <td><input type="text"
                                id="sphereVolume"
                                name="sphereVolume"
@@ -78,7 +90,9 @@
             <h3>Cones:</h3>
             <table>
                 <tr>
-                    <td><label for="coneRadius">Radius:</label></td>
+                    <td><label for="coneRadius"
+                                id="CRlabel"
+                    >Radius:</label></td>
                     <td><input type="text"
                                id="coneRadius"
                                name="coneRadius"
